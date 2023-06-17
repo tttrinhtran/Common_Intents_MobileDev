@@ -9,7 +9,7 @@
     <string name="EmailActivity">Email</string>
     <string name="ReceiverMail">Address</string>
     <string name="EmailSubject">Subject</string>
-    <string name="Attachment">Attachment</string>
+    <string name="Attachment">Body</string>
     <string name="SendMail">Send</string>
     <string name="MapActivity">RestaurantMap</string>
     <string name="StartMap">Start Map</string>
