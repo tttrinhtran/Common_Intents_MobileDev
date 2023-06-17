@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.app.SearchManager;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
@@ -56,9 +57,10 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri webpage = Uri.parse("https://www.fit.hcmus.edu.vn/vn/");
+                Uri webpage = Uri.parse("https://www.google.com.vn/?hl=vi");
+
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-                if(intent.resolveActivity(getPackageManager()) != null){
+                if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }
             }
@@ -171,8 +173,9 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, ViewImageScreen.class);
-                startActivity(intent);
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"),Integer.parseInt(imageBitmap.toString()));
             }
         });
 

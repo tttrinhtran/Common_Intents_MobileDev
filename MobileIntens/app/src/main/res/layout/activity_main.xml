@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/viewImage"
             android:text="View Image"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:visibility="gone"/>
     </LinearLayout>
 
    <LinearLayout
