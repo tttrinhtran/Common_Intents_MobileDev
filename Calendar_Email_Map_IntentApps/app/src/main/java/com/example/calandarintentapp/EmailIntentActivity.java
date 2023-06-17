@@ -36,12 +36,12 @@ public class EmailIntentActivity extends AppCompatActivity {
                     Intent intent = new Intent (Intent.ACTION_SEND);
                     intent.setType("message/rfc822");
 
-                    intent.putExtra(Intent.EXTRA_EMAIL, _sAddress);
+                    intent.putExtra(Intent.EXTRA_EMAIL, new String[]{_sAddress});
                     intent.putExtra(Intent.EXTRA_SUBJECT, _sSubject);
-                    intent.putExtra(Intent.EXTRA_STREAM, _sAttach);
+                    intent.putExtra(Intent.EXTRA_TEXT, _sAttach);
 
                     try {
-                        startActivity(intent);
+                        startActivity(Intent.createChooser(intent, "Choose an Email client :"));
                     }catch(Exception ActivityNotFoundException){
                         Toast.makeText(EmailIntentActivity.this, "Intent not Found", Toast.LENGTH_SHORT).show();
                     }
