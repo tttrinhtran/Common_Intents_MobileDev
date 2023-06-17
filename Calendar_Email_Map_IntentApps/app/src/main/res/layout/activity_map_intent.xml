@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapIntentActivity">
+
+    <TextView
+        android:id="@+id/MapActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MapActivity"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/LatitudeBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude"
+        app:layout_constraintTop_toBottomOf = "@id/MapActivityTitle"
+        />
+
+    <EditText
+        android:id="@+id/LongitudeBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitude"
+        app:layout_constraintTop_toBottomOf = "@id/LatitudeBox"
+        />
+
+    <Button
+        android:id="@+id/setMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LongitudeBox"
+        android:layout_marginTop="10dp"
+        android:text="@string/StartMap"/>
+
+    <Button
+        android:id="@+id/ToMainActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setMapButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/NextIntent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

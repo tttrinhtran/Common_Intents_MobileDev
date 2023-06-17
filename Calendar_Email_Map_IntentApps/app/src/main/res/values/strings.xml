@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CalandarIntentApp</string>
+    <string name="EventName">Set Event</string>
+    <string name="EventLocation">Location</string>
+    <string name="EventDescription">Description</string>
+    <string name="EventTitle">Title</string>
+    <string name="SetButton">Set</string>
+    <string name="NextIntent">Next Intent</string>
+    <string name="EmailActivity">Email</string>
+    <string name="ReceiverMail">Address</string>
+    <string name="EmailSubject">Subject</string>
+    <string name="Attachment">Attachment</string>
+    <string name="SendMail">Send</string>
+    <string name="MapActivity">RestaurantMap</string>
+    <string name="StartMap">Start Map</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+</resources>
