@@ -4,5 +4,5 @@ Class 21CTT
 # Members:
 21125071 - Ho Viet Bao Long
 21125089 - Luu Van Phuc
-21125053 - Ngo Thai Phung
+21125057 - Ngo Thai Phung
 21125074 - Trinh Tran Tran
