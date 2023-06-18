@@ -18,10 +18,10 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/sendButton"
+        android:id="@+id/_btnsearch"
         android:layout_width="322dp"
         android:layout_height="49dp"
-        android:text="Button"
+        android:text="Search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -34,9 +34,9 @@
         android:layout_width="327dp"
         android:layout_height="67dp"
         android:ems="10"
-        android:hint="( Anything you want to share )"
+        android:hint="Search"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/sendButton"
+        app:layout_constraintBottom_toTopOf="@+id/_btnsearch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

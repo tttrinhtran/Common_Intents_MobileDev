@@ -23,10 +23,10 @@
             android:name=".SpeechToText"
             android:exported="false" />
         <activity
-            android:name=".PhoneCall"
+            android:name=".Contact"
             android:exported="false" />
         <activity
-            android:name=".Sharing"
+            android:name=".searching"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

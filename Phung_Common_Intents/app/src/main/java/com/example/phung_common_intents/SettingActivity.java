@@ -1,21 +1,16 @@
 package com.example.phung_common_intents;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.loader.content.CursorLoader;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class SettingActivity extends AppCompatActivity {
     Button BtnSongChoice;
     Button BtnPlaySong;
     Button BtnInternalStorage;
@@ -45,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         _nextIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent temp = new Intent(MainActivity.this, PhoneCallAcitivity.class);
+                Intent temp = new Intent(SettingActivity.this, PhoneCallAcitivity.class);
                 startActivity(temp);
             }
         });
