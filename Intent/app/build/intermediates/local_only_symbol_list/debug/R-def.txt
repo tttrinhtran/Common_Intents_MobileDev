@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable baseline_mic_24
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button
+id editText
+id imageView
+id inputText
+id nextButton
+id phoneNumber
+id sendButton
+layout activity_main
+layout alertcustom
+layout phonecall_layout
+layout sharing_layout
+layout speechtotext_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Intent
+style Theme.Intent
+xml backup_rules
+xml data_extraction_rules
